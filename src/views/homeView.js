@@ -1,6 +1,8 @@
 import Sidebar from "@/components/Sidebar";
 import { getSession } from "@/utils";
-import { homeController } from "@/controllers/home.controller";
+import { homeController, botb } from "@/controllers/home.controller";
+
+
 
 export default function homeView() {
   const user = getSession();
@@ -42,10 +44,7 @@ export default function homeView() {
                   Puedes visualizar todas las reservas.
                 </p>
 
-                <button
-                  class="mt-3 bg-blue-600 text-white px-4 py-2 rounded"
-                  id="G-Reservas"
-                >
+                <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded" id="GReservas" onclick="saludar()">
                   Gestionar Reservas
                 </button>
 
@@ -113,3 +112,4 @@ export default function homeView() {
     </div>
   `;
 }
+

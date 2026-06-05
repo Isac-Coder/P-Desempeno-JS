@@ -9,6 +9,7 @@ export const homeController = async () => {
 
   const reservations = await getReservation();
 
+
   const filteredReservations =
     user.role === "admin"
       ? reservations
@@ -24,9 +25,9 @@ export const homeController = async () => {
           No hay reservas disponibles
         </p>
       </div>
-    `;
-
-    
+      `;
 };
 
-
+export function botb() {
+    console.log("hola")
+}
